@@ -14,7 +14,7 @@ export default function PageNotFound() {
             <Button
                 variant="primary"
                 size="lg"
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/dh-portfolio')}
             >
                 Back to Homepage
             </Button>

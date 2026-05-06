@@ -3,12 +3,16 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: ["https://dyne-creates.github.io"]
+}));
+
 app.use(express.json());
 
 // MongoDB Connection
 mongoose
-    .connect("mongodb+srv://dyne:dyne@cluster0.i3mwai0.mongodb.net/portfolio?retryWrites=true&w=majority")
+    mongoose.connect(process.env.MONGO_URI)
+    // .connect("mongodb+srv://dyne:dyne@cluster0.i3mwai0.mongodb.net/portfolio?retryWrites=true&w=majority")
     .then(() => console.log("MongoDB Connected"))
     .catch(console.error);
 
@@ -82,4 +86,8 @@ app.post("/admin/login", async (req, res) => {
 });
 
 // Start server
-app.listen(5000, () => console.log("Server running on port 5000"));
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

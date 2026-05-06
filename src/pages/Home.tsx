@@ -65,7 +65,7 @@ export default function Home() {
                                     variant="light"
                                     size="lg"
                                     className="fw-bold px-4"
-                                    onClick={() => navigate("/about")}>
+                                    onClick={() => navigate("/dh-portfolio/about")}>
                                     About Me
                                 </Button>
 
@@ -73,7 +73,7 @@ export default function Home() {
                                     variant="outline-light"
                                     size="lg"
                                     className="fw-bold px-4"
-                                    onClick={() => navigate("/contact")}>
+                                    onClick={() => navigate("/dh-portfolio/contact")}>
                                     Contact Me
                                 </Button>
 
@@ -159,7 +159,7 @@ export default function Home() {
                                         variant="light"
                                         size="lg"
                                         className="fw-bold px-5"
-                                        onClick={() => navigate("/contact")}>
+                                        onClick={() => navigate("/dh-portfolio/contact")}>
                                         Get In Touch
                                     </Button>
                                 </Card.Body>

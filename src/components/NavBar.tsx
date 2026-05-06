@@ -8,7 +8,7 @@ export default function NavBar() {
     return (
         <Navbar expand="lg" bg="dark" variant="dark" className="py-3 shadow-sm">
             <Container>
-                <Navbar.Brand as={Link} to="/">
+                <Navbar.Brand as={Link} to="/dh-portfolio">
                     <img
                         src={Logo}
                         alt="Logo"
@@ -20,16 +20,16 @@ export default function NavBar() {
 
                 <Navbar.Collapse id="navbar-nav">
                     <Nav className="ms-auto">
-                        <Nav.Link as={Link} to="/" className="px-3 text-white">
+                        <Nav.Link as={Link} to="/dh-portfolio" className="px-3 text-white">
                             Home
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/about" className="px-3 text-white">
+                        <Nav.Link as={Link} to="/dh-portfolio/about" className="px-3 text-white">
                             About
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/projects" className="px-3 text-white">
+                        <Nav.Link as={Link} to="/dh-portfolio/projects" className="px-3 text-white">
                             Projects
                         </Nav.Link>
-                        <Nav.Link as={Link} to="/contact" className="px-3 text-white">
+                        <Nav.Link as={Link} to="/dh-portfolio/contact" className="px-3 text-white">
                             Contact
                         </Nav.Link>
                     </Nav>

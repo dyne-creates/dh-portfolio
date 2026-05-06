@@ -20,11 +20,11 @@ export default function App() {
 
         <main className="flex-grow-1">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/admin" element={<Admin />} />
+            <Route path="/dh-portfolio" element={<Home />} />
+            <Route path="/dh-portfolio/about" element={<About />} />
+            <Route path="/dh-portfolio/projects" element={<Projects />} />
+            <Route path="/dh-portfolio/contact" element={<Contact />} />
+            <Route path="/dh-portfolio/admin" element={<Admin />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </main>

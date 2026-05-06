@@ -66,7 +66,7 @@ export default function Contact() {
 
         try {
             const saveMessage = await fetch(
-                "http://localhost:5000/contact",
+                "https://dh-portfolio-backend-repo.onrender.com/contact",
                 {
                     method: "POST",
                     headers: {

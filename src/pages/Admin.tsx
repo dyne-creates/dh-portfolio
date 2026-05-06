@@ -36,7 +36,7 @@ export default function Admin() {
         try {
             setLoading(true);
 
-            const res = await fetch("http://localhost:5000/contact");
+            const res = await fetch("https://dh-portfolio-backend-repo.onrender.com/contact");
             const data = await res.json();
 
             setContacts(data);
@@ -53,7 +53,7 @@ export default function Admin() {
         try {
             setLoading(true);
 
-            const res = await fetch("http://localhost:5000/admin/login", {
+            const res = await fetch("https://dh-portfolio-backend-repo.onrender.com/admin/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -84,7 +84,7 @@ export default function Admin() {
 
         try {
             const res = await fetch(
-                `http://localhost:5000/contact/${id}`,
+                `http://dh-portfolio-backend-repo.onrender.com//${id}`,
                 {
                     method: "DELETE",
                 }
