@@ -1,6 +1,7 @@
 {
   "name": "dh-portfolio",
   "private": true,
+  "homepage": "https://dyne-creates.github.io/dh-portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,7 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

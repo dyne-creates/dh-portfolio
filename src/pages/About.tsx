@@ -11,6 +11,7 @@ import JavaScriptIcon from "../assets/icons/java-script.png";
 import TypescriptIcon from "../assets/icons/typescript.png";
 
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import { useEffect } from "react";
 
 export default function About() {
     const tools = [
@@ -24,6 +25,10 @@ export default function About() {
         { icon: GithubIcon, title: "GitHub", desc: "Collaboration Tool" },
         { icon: MongoDBIcon, title: "MongoDB", desc: "Database" },
     ];
+
+    useEffect(() => {
+        document.title = "Dwayne Hinnong • About";
+    }, []);
 
     return (
         <>

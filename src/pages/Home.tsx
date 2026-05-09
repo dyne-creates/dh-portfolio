@@ -1,10 +1,15 @@
 import { Container, Row, Col, Button, Card, Image } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 import myImage from "../assets/heroImage.png";
 
 export default function Home() {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        document.title = "Dwayne Hinnong • Home";
+    }, []);
 
     return (
         <>
@@ -85,7 +90,7 @@ export default function Home() {
                                 <Image
                                     src={myImage}
                                     alt="Profile"
-                                    className="hero-image"/>
+                                    className="hero-image" />
                             </div>
                         </Col>
 

@@ -25,6 +25,10 @@ export default function Admin() {
         }
     }, [isLoggedIn]);
 
+    useEffect(() => {
+        document.title = "Dwayne Hinnong • Admin";
+    }, []);
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setLoginData({
             ...loginData,
@@ -84,7 +88,7 @@ export default function Admin() {
 
         try {
             const res = await fetch(
-                `http://dh-portfolio-backend-repo.onrender.com//${id}`,
+                `https://dh-portfolio-backend-repo.onrender.com/contact/${id}`,
                 {
                     method: "DELETE",
                 }

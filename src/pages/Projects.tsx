@@ -1,14 +1,14 @@
 import { Container, Row, Col, Card, Button, Badge } from "react-bootstrap";
+import { useEffect } from "react";
 
 export default function Projects() {
     const projects = [
         {
-            title: "Sample BioData Template",
-            description:
-                "A clean and structured personal biodata webpage that presents basic information using HTML and CSS layout fundamentals.",
-            tech: ["HTML", "CSS"],
-            link: "https://dyne-creates.github.io/ExerciseCSS1/",
-            status: "Live Project",
+            title: "City Issue Reporting Platform",
+            description: "A professional web application built to empowers citizens to report public issues such as infrastructure damage, waste management concerns, and safety hazards.",
+            tech: ["React", "Bootstrap", "TypeScript"],
+            link: "https://dyne-creates.github.io/city-issue-report/",
+            status: "Live Project"
         },
         {
             title: "Music Band Website",
@@ -22,7 +22,7 @@ export default function Projects() {
             title: "University Event Dashboard",
             description:
                 "A student dashboard where users can browse school events, view details, and register for upcoming campus activities.",
-            tech: ["HTML", "CSS", "JavaScript"],
+            tech: ["React", "Bootstrap", "TypeScript"],
             link: "https://dyne-creates.github.io/university_event_dashboard/",
             status: "Live Project",
         },
@@ -30,12 +30,14 @@ export default function Projects() {
             title: "University Information Website",
             description:
                 "A complete university website presenting school information, location, services, and academic identity with responsive design.",
-            tech: ["HTML", "CSS", "Bootstrap"],
+            tech: ["React", "Bootstrap", "TypeScript"],
             link: "https://dyne-creates.github.io/APTECH_MG_LAB5/",
             status: "Live Project",
         },
     ];
-
+    useEffect(() => {
+        document.title = "Dwayne Hinnong • Projects";
+    }, []);
     return (
         <>
             <style>

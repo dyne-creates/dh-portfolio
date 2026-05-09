@@ -34,7 +34,7 @@ export default function Footer() {
                     </a>
 
                     <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/dwayne-hinnong-b6838139a/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-link"

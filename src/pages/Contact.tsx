@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { Container, Row, Col, Card, Form, Button, Spinner, Alert, } from "react-bootstrap";
 
@@ -112,6 +112,9 @@ export default function Contact() {
         }
     };
 
+    useEffect(() => {
+        document.title = "Dwayne Hinnong • Contact";
+    }, []);
     return (
         <>
             <style>
@@ -185,7 +188,7 @@ export default function Contact() {
                                                 placeholder="Enter your full name"
                                                 value={contactData.fullName}
                                                 onChange={handleChange}
-                                                className="contact-input py-3"/>
+                                                className="contact-input py-3" />
                                         </Form.Group>
 
                                         <Form.Group className="mb-4">
@@ -199,7 +202,7 @@ export default function Contact() {
                                                 placeholder="Enter your email address"
                                                 value={contactData.email}
                                                 onChange={handleChange}
-                                                className="contact-input py-3"/>
+                                                className="contact-input py-3" />
                                         </Form.Group>
 
                                         <Form.Group className="mb-4">
@@ -214,7 +217,7 @@ export default function Contact() {
                                                 placeholder="Write your message here..."
                                                 value={contactData.message}
                                                 onChange={handleChange}
-                                                className="contact-input"/>
+                                                className="contact-input" />
                                         </Form.Group>
 
                                         <Button
